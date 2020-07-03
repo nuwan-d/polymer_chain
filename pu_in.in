@@ -3,7 +3,6 @@ units 		real
 boundary	p p p
 atom_style	full
 
-
 # -----------------Potential-----------------
 
 variable	cutoff		equal	10
@@ -28,20 +27,15 @@ min_modify         dmax 0.4
 minimize           1e-8 1e-10 20000 50000
 reset_timestep     0
 
+# ----------------- Run-----------------
 
-######################################
-
-variable tstp equal 1
-timestep ${tstp}
-variable tdamp equal "v_tstp * 100"
-variable pdamp equal "v_tstp * 1000"
-
+variable      tstp equal 1
+timestep      ${tstp}
+variable      tdamp equal "v_tstp * 100"
 
 fix            1 all nvt temp 1 1 ${tdamp} 
+thermo         1000
 
-thermo 1000
-
-######################################
 dump          1 all atom 200 pu_eq.lammpstrj
-run 50000
-write_data pu_eq_data.data
+run           50000
+write_data    pu_eq_data.data
