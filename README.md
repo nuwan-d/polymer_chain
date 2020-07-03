@@ -4,4 +4,4 @@ The three files (pu_in.in, pu_data.data, pu_para.params) can be used to model a 
 
  <img src="image.PNG" width="300">
 
-The data and parameter files were created using the [Enhanced Monte Carlo Package](http://montecarlo.sourceforge.net/emc/Welcome.html) by Pieter J. in ’t Veld.. The movie was created using the [Open Visualization Tool](https://www.ovito.org/).
+The data and parameter files were created using the [Enhanced Monte Carlo Package](http://montecarlo.sourceforge.net/emc/Welcome.html) by Pieter J. in ’t Veld. The movie was created using the [Open Visualization Tool](https://www.ovito.org/).
