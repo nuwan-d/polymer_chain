@@ -8,4 +8,4 @@ The data and parameter files were created using the [Enhanced Monte Carlo Packag
 
 The Python script [plot_energy.py](plot_energy.py) can be used to plot the variation of energy of the plymer chain with time (see below):
 
- <img src="energy_time.PNG" width="300">
+ <img src="energy_time.PNG" width="400">
